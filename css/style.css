@@ -1,0 +1,429 @@
+/* Box Model Hack */
+:root {
+  --orange: rgb(255, 120, 0);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+input {
+  border-radius: 0;
+  border: 1px solid lightgray;
+  height: 3rem;
+  width: 70%;
+}
+
+button {
+  width: 20%;
+  height: 3rem;
+  background-color: var(--orange);
+  border: 1px solid var(--orange);
+  border-top-right-radius: 5%;
+  border-bottom-right-radius: 5%;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.section-3 > span {
+  margin-top: 2rem;
+}
+
+.section-3 > h2 {
+  margin-top: 3rem;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: gray;
+}
+
+span {
+  color: var(--orange);
+  font-size: 0.8rem;
+}
+
+.discover-menu-button {
+   margin-top: 2rem;
+   border-radius: 0;
+   border-top-left-radius: 5%;
+   border-bottom-left-radius: 5%;
+   color: white;
+   font-weight: 300;
+}
+
+.right-arrow {
+  margin-top: 2rem;
+   border-top-right-radius: 5%;
+   border-bottom-right-radius: 5%;
+   color: white;
+}
+
+.social-count {
+  color: black;
+}
+
+.fa-facebook-f, .fa-twitter, .fa-instagram {
+  color: var(--orange);
+}
+
+img {
+  width: 15rem;
+  height: auto;
+}
+
+.section-3 {
+  background-color: rgb(242, 246, 247);
+  min-height: 40rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-3 > * {
+  margin: 0.4rem auto;
+}
+
+.section-3 > ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section-3 li {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  border-bottom: 2px solid lightgray;
+}
+
+.section-3 li:first-child {
+  color: var(--orange);
+  border-bottom: 2px solid var(--orange);
+}
+
+.menu-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.menu-images > img {
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+}
+
+.section-4 {
+  display: flex;
+  flex-direction: column;
+  min-height: 60rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.book-table {
+  margin-bottom: 0.25rem;
+}
+
+.opening-hours {
+  font-size: 2.5rem;
+  font-weight: bolder;
+  margin-bottom: 2rem;
+}
+
+.fa-phone {
+  color: var(--orange);
+  margin-bottom: 0.5rem;
+}
+
+.call-now {
+  color: black;
+  margin-top: 2rem;
+  margin-bottom: 0.25rem;
+}
+
+.phone-number {
+  font-size: 1.2rem;
+}
+
+.hours-open-wrapper {
+  color: black;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 2rem;
+}
+
+.hours-open-wrapper section {
+  margin: 1rem 3rem;
+}
+
+.hours-open-wrapper span {
+  display: block;
+  color: black;
+  font-size: 0.8rem;
+}
+
+.section-4 img {
+  width: 30rem;
+}
+
+.section-5 {
+  display: flex;
+  flex-direction: column;
+  min-height: 40rem;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(242, 246, 247);
+}
+
+.section-5 > span:first-child {
+  margin-bottom: 1rem;
+}
+
+.section-5 > h3 {
+  font-size: 2rem;
+  font-weight: bolder;
+  margin-bottom: 2rem;
+}
+
+.section-5 > img {
+  width: 8rem;
+}
+
+.user-name {
+  color: black;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.user-title {
+  color: gray;
+  margin-bottom: 1rem;
+}
+
+.fa-circle-small {
+  color: var(--orange);
+}
+
+.section-5 > p {
+  padding: 1rem 7rem;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  min-height: 4rem;
+  padding: 1.5rem 3rem;
+  overflow: auto;
+  position: relative;
+}
+header > div {
+  float: left;
+}
+
+header > ul {
+  float: right;
+}
+
+header a {
+  padding-left: 1rem;
+}
+
+.image-wrapper {
+  background-size: cover;
+  min-height: 40rem;
+}
+
+.content-wrapper {
+  float: right;
+  width: 60%;
+  margin-top: 10%;
+  margin-right: 20%;
+}
+
+.content-wrapper > h1 {
+  width: 40%;
+}
+
+.socials {
+  clear: both;
+  display: flex;
+  width: 30%;
+  justify-content: space-between;
+  height: 3rem;
+  align-items: center;
+}
+
+.section-2 {
+  min-height: 30rem;
+  margin: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-us {
+  margin-bottom: 1rem;
+}
+
+.section-2 > h2 {
+  margin-bottom: 1rem;
+}
+
+.button-wrapper {
+  display: flex;
+}
+
+.discover-menu-button {
+  width: 10rem;
+}
+
+.right-arrow{
+  background-color: var(--orange);
+  opacity: 0.8;
+  height: 3rem;
+  width:3rem;
+}
+
+.fa-arrow-right {
+  position: relative;
+  top: 30%;
+  left: 30%;
+}
+
+.mobile-nav {
+  display: none;
+  height: 2em;
+  width: 3rem;
+}
+
+.mobile-nav > div {
+  height: 0.5rem;
+  width: 3rem;
+  border-bottom: 2px solid black;
+  margin-bottom: 0.2rem;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+@media only screen and (max-width: 800px){
+  /* Header and nav */
+  .desktop-nav {
+    display: none;
+  }
+  .mobile-nav {
+    display: block;
+    position: absolute;
+    right: 2rem;
+    top: 1rem;
+  }
+  /* main section */
+  .content-wrapper {
+    float: left;
+    width: 100%;
+    margin: 0;
+    margin-left: 10%;
+    margin-top: 15%;
+  }
+  /* section-2 */
+  .section-2 {
+    margin: 2rem;
+  }
+  .button-wrapper {
+    width: 100%;
+  }
+  .discover-menu-button {
+    width: 40%;
+  }
+  .right-arrow {
+    width: 20%;
+  }
+
+  /* section-3 */
+  .section-3 {
+    padding: 2rem;
+  }
+  .section-3 > span {
+    margin-bottom: 0;
+  }
+  .section-3 > h2 {
+    margin-top: 1rem;
+  }
+  .cuisine-options {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+    height: 3rem;
+  }
+  .menu-images img {
+    width: 100%;
+  }
+
+  /* section-4 */
+  .opening-hours {
+    margin-bottom: 1rem;
+  }
+  .fa-phone {
+    margin-bottom: 1rem;
+  }
+  .call-now {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+  }
+  .hours-open-wrapper span {
+    font-size: 1rem;
+  }
+  .hours-open-wrapper section {
+    margin: 1rem;
+  }
+  .section-4 > img {
+    width: 80%;
+  }
+
+  /* section-5 */
+  .section-5 > span {
+    margin-top: 1rem;
+  }
+  .section-5 > p {
+    width: 100%;
+    padding: 2rem;
+  }
+ }
